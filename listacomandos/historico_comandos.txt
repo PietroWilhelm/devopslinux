@@ -1,0 +1,59 @@
+az account show --query "{Sub:id, Nome:name}" -o jsonc
+az account list
+clear
+history
+az group create --name rg-dimdim-dev --location eastus
+az group show -n rg-dimdim-dev --query "{Name:name, Local:location, Tags:tags}"
+az group delete -n rg-dimdim-dev --yes --no-wait
+az gruup list
+az group list
+az group list --query
+az group show --query rg-dimdim-dev
+az group show  rg-dimdim-dev
+az group show --resource-group rg-dimdim-dev
+clear
+az vm image list --offer "server-focal" --publisher canonical --sku "20_04-lts" --all -o table
+clear
+pwd
+git clone https://github.com/PietroWilhelm/devopslinux.git
+git branch
+git checkout -b aulalinux09-azure
+cd devopslinux/
+git checkout -b aulalinux09-azure
+clear
+az vm image list --all --output table
+az vm list-sizes --location eastus -o table
+az vm list-skus
+clera
+clear
+az --version
+az vm image list
+az upgrade --yes
+az account list -o table
+az account set --subscription "2TDSPG-2026-561378-PietroWilhelm" 
+az account show --query "{Sub:id, Nome:name}" -o jsonc
+az account list-locations -o table
+az account list-locations --query "[].name" -o tsv | sort
+git status
+clear
+pwd
+ls
+git branch
+sudo rm -r dimdim_bank/
+clear
+pwd
+ls
+cd devopslinux/
+git branch
+ls
+sudo rm -r dimdim_bank/
+history
+ls
+mkdir listacomandos
+ls
+cd listacomandos/
+touch historico_comandos.txt
+cd ..
+rmdir dimdim_bank/
+rm -rf dimdim_bank/
+ls
